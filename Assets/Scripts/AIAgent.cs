@@ -101,7 +101,7 @@ public class AIAgent : MonoBehaviour
                     int weighting = combinedMap[temp.x, temp.y] -
                         Mathf.RoundToInt(combinedMap[temp.x, temp.y] * Mathf.Clamp(Mathf.InverseLerp(0, combinedMap[temp.x, temp.y], Mathf.RoundToInt(Vector3.Distance(transform.position, heatmap.cells[i].transform.position)) * 5),
                         0, combinedMap[temp.x, temp.y]));
-                    weighting = (int)(weighting * (Vector3.Angle(-transform.forward, heatmap.cells[i].transform.position - transform.position)) / 90);
+                    weighting = (int)(weighting * (1 + (Vector3.Angle(-transform.forward, heatmap.cells[i].transform.position - transform.position)) / 720));
                     weighting = Mathf.RoundToInt(Mathf.Pow(Mathf.Ceil(weighting / 10), 2));
 
                     if (heatmap.cells[i].GetComponent<CellInfo>().destinationPullValue == 200)

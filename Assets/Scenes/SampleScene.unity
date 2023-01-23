@@ -2305,7 +2305,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-101212
+  m_Name: pb_Mesh-1424
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -3212,12 +3212,12 @@ PrefabInstance:
     - target: {fileID: -1008785476957798685, guid: 8ffcb6f0617539d43bf90f328e498379,
         type: 3}
       propertyPath: visitDistance
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -1008785476957798685, guid: 8ffcb6f0617539d43bf90f328e498379,
         type: 3}
       propertyPath: retentionStart
-      value: 40
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 642319069149374827, guid: 8ffcb6f0617539d43bf90f328e498379,
         type: 3}
